@@ -1,3 +1,4 @@
+import math
 print("===============================")
 print("Task #1")
 print("===============================")
@@ -49,7 +50,21 @@ print("===============================")
 print("Task #5")
 print("===============================")
 
+a = 50
+b = 30
+c = 15
+equation = math.fabs(a - b)/(a + b)**3 - math.cos(c)
+print("При a = %d,  b = %d, c = %d равно %.2f" % (a, b, c, equation))
+print(result)
+
 
 print("===============================")
 print("Task #6")
 print("===============================")
+
+a = 20
+b = 10
+c = 5
+equation = (math.log1p(1 + c) / -b)**4+math.fabs(a)
+print("При a = %d,  b = %d, c = %d равно %.2f" % (a, b, c, equation))
+print(result)
