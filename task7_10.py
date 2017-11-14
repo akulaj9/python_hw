@@ -3,7 +3,7 @@ print("Task #7")
 print("===============================")
 
 current_date = "11.14.2017"
-print()
+
 print(current_date)
 lst = current_date.split(".")
 mounth = lst[0]
