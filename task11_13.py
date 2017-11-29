@@ -39,17 +39,17 @@ print("===============================")
 print("Task #13")
 print("===============================")
 
-def result (AB, AC):
-    gipotenuza = math.sqrt(AB ** 2 + AC ** 2)
-    area = (AB * AC) / 2
-    perimetr = AB + AC + gipotenuza
-    stepen2 = "\u00B2"
-    print("Вводные данные: катеты прямоугольного треугольника равны %.0fсм и %.0fсм" % (AB, AC))
+def result (ab, ac):
+    gipotenuza = math.sqrt(ab ** 2 + ac ** 2)
+    area = (ab * ac) / 2
+    perimetr = ab + ac + gipotenuza
+    power = "\u00B2"
+    print("Вводные данные: катеты прямоугольного треугольника равны %.0fсм и %.0fсм" % (ab, ac))
     print ("")
     print("Вопрос: найти площадь и периметр треугольника")
     print ("")
-    print("Ответ: площадь равна %.2fсм%s, а периметр %.2fсм" % (area, stepen2, perimetr))
+    print("Ответ: площадь равна %.2fсм%s, а периметр %.2fсм" % (area, power, perimetr))
 
-AB = 5
-AC = 10
-print_result = result(AB, AC)
+ab = 5
+ac = 10
+print_result = result(ab, ac)
