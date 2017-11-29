@@ -24,8 +24,8 @@ x1, y1, r1 = [float(x.strip()) for x in input_data.split(',')]
 input_data = input("Enter data for the 2nd circle (x,y,r): ")
 x2, y2, r2 = [float(x.strip()) for x in input_data.split(',')]
 
-def d(x1, y1, x2, y2):
-    return abs(math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)))
+def cirles_intersection(x1, y1, x2, y2):
+    return (math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)))
 
 def distant(d, r1, r2):
     return d > r1+r2
@@ -33,7 +33,7 @@ def distant(d, r1, r2):
 def within(d, r1, r2):
     return d < abs(r1-r2)
 
-d = d(x1, y1, x2, y2)
+d = cirles_intersection(x1, y1, x2, y2)
 
 if not distant(d, r1, r2) and not within(d, r1, r2):
     print("\nОтвет: окружности пересикаються.")
@@ -45,19 +45,19 @@ print("===============================")
 print("Task #16")
 print("===============================")
 
-V1 = float(input("Скорость первого поезда:"))
-V2 = float(input("Скорость второго поезда:"))
-S = float(input("Растояние между поездами:"))
-S1 = float(input("Дистанция до запасного пути:"))
-S2 = S - S1
+v1 = float(input("Скорость первого поезда:"))
+v2 = float(input("Скорость второго поезда:"))
+s = float(input("Растояние между поездами:"))
+s1 = float(input("Дистанция до запасного пути:"))
+s2 = s - s1
 
-def elapsed_time (S, V):
-    return S/V
+def elapsed_time(s, v):
+    return s/v
 
 def collision (elapsed_time1, elapsed_time2):
-    return elapsed_time1 >= elapsed_time2
+    return elapsed_time1 >= elapsed_ti
 
-if collision(elapsed_time(S1, V1), elapsed_time(S2, V2)):
+if collision(elapsed_time(s1, v1), elapsed_time(s2, v2)):
     print("Ответ: поезда столкнутся.")
 else:
     print("Ответ: поезда разъедутся.")
