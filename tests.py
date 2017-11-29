@@ -1,22 +1,20 @@
+import math
 print("===============================")
 print("Task 1_3")
 print("===============================")
 
 def example1(a, b, c):
-    import math
     return (a+b*c)**2
 
 def example2(a, b, c):
-    import math
     return a-4*b/c
 
 def example3(a, b, c):
-    import math
     return (a*b+4)/(c-1)
 
-a = 1
-b = 2
-c = 3
+a = 10
+b = 20
+c = 30
 result1 = example1(a, b, c)
 result2 = example2(a, b, c)
 result3 = example3(a, b, c)
