@@ -24,7 +24,7 @@ x1, y1, r1 = [float(x.strip()) for x in input_data.split(',')]
 input_data = input("Enter data for the 2nd circle (x,y,r): ")
 x2, y2, r2 = [float(x.strip()) for x in input_data.split(',')]
 
-def cirles_intersection(x1, y1, x2, y2):
+def distance(x1, y1, x2, y2):
     return (math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)))
 
 def distant(d, r1, r2):
@@ -33,7 +33,7 @@ def distant(d, r1, r2):
 def within(d, r1, r2):
     return d < abs(r1-r2)
 
-d = cirles_intersection(x1, y1, x2, y2)
+d = distance(x1, y1, x2, y2)
 
 if not distant(d, r1, r2) and not within(d, r1, r2):
     print("\nОтвет: окружности пересикаються.")
